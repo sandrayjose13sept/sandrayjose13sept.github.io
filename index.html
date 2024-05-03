@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Sandra & Jose - Boda</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Sandra Y Jose - 13 Sept" name="keywords">
-    <meta content="Sandra Y Jose - 13 Sept" name="description">
+    <meta content="Sandra Y Jose. 13 Septiembre" name="keywords">
+    <meta content="Sandra Y Jose. 13 Septiembre" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -68,7 +68,6 @@
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">¡Nos casamos!</h3>
                             </div>
-
                             <!--
                             <button type="button" class="btn-play mx-auto" data-toggle="modal"
                                 data-src="https://open.spotify.com/playlist/4IfcCTWWX9Wx12urBF7mzo?si=fee2ff9f3dec43d1" data-target="#videoModal">
@@ -109,7 +108,9 @@
         </div>
     </div>
     <!-- Carousel End -->
+
 <!-- VENTANA DE SPOTIFY-->
+
 <div>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5CIxhUyF0OATtBB5zExKRc?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
@@ -384,8 +385,8 @@
     </div>
     <!-- Event End -->
 
-
-    <!-- Friends & Family Start -->
+<!---->
+    <!-- Friends & Family Start 
     <div class="container-fluid py-5" id="family">
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
@@ -495,7 +496,7 @@
             </div>
         </div>
     </div>
-    <!-- Friends & Family End -->
+     Friends & Family End -->
 
  <!-- Información Start -->
  <div class="container-fluid py-5" id="event">
@@ -507,7 +508,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6 text-center">
-                <h5 class="font-weight-normal text-muted mb-3 pb-3">Clita ipsum aliquyam dolor diam dolores elitr nonumy. Rebum sea vero ipsum eirmod tempor kasd. Diam amet lorem erat eos sit lorem elitr justo</h5>
+                <h5 class="font-weight-normal text-muted mb-3 pb-3">Aquí hay que poner otra cosa a la derecha porque el convite ya está. Se puede poner info sobre lugares de interés. La parte de arriba se puede llamar de otra forma en lugar de Aeropuertos</h5>
             </div>
         </div>
         <div class="row">
@@ -540,6 +541,7 @@
 <!-- Información End -->
 
     <!-- RSVP Start -->
+    <!--
     <div class="container-fluid py-5" id="rsvp">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
@@ -589,7 +591,67 @@
             </div>
         </div>
     </div>
+    -->
     <!-- RSVP End -->
+
+    
+<!-- RSVP Start -->
+<div class="container-fluid py-5" id="rsvp">
+    <div class="container py-5">
+        <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+            <h1 class="font-secondary display-4">Join Our Party</h1>
+            <i class="far fa-heart text-dark"></i>
+        </div>
+
+        <div class="container-fluid py-5"class="section-title position-relative text-center"><h5>ESTA PARTE FUERA</h5></div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center">
+                    <!-- Se agrega el atributo 'method="post"' para especificar que el formulario se envía usando el método HTTP POST -->
+                    <form method="post" action="enviar_email.php"> <!-- Se cambia el valor del atributo 'action' para apuntar al script PHP 'enviar_email.php' -->
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <!-- Se agrega el atributo 'name="nombre"' para identificar el campo del nombre en el script PHP -->
+                                <input type="text" class="form-control bg-secondary border-0 py-4 px-3" name="nombre" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <!-- Se agrega el atributo 'name="email"' para identificar el campo del correo electrónico en el script PHP -->
+                                <input type="email" class="form-control bg-secondary border-0 py-4 px-3" name="email" placeholder="Your Email"/>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                    <option>Number of Guest</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                    <option>I'm Attending</option>
+                                    <option>All Events</option>
+                                    <option>Wedding Party</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" name="mensaje" placeholder="Message" required="required"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- RSVP End -->
 
 
     <!-- Footer Start -->
@@ -603,14 +665,19 @@
                 <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/sandrika.h?igsh=ZTZncjg5MnVibnJu"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="d-flex justify-content-center py-2">
-                <p class="text-white" href="#">info@example.com</p>
+                <p class="text-white" href="#">sandrayjose13sept@gmail.com</p>
                 <span class="px-3">|</span>
-                <p class="text-white" href="#">+012 345 6789</p>
+                <p class="text-white" href="#">0034 622 65 96 18</p>
             </div>
-            <p class="m-0">&copy; <a class="text-primary" href="#">Domain Name</a>. Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>
+            <div class="d-flex justify-content-center py-2">
+                <p class="text-white" href="#">sandrayjose13sept@gmail.com</p>
+                <span class="px-3">|</span>
+                <p class="text-white" href="#">00451 902 848 022</p>
+            </div>
+            <p class="m-0">&copy; <a class="text-primary" href="#">Killo</a>. Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>
             </p>
         </div>
     </div>
