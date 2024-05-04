@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Inicio</a>
-                <a href="#about" class="nav-item nav-link">Nosotros</a>
+               <!-- <a href="#about" class="nav-item nav-link">Nosotros</a>-->
                 <a href="#story" class="nav-item nav-link">Historia</a>
                 <a href="#gallery" class="nav-item nav-link">Galeria</a>
             </div>
@@ -48,13 +48,20 @@
             <div class="navbar-nav mr-auto py-0">
                 <a href="#family" class="nav-item nav-link">Información</a>
                 <a href="#event" class="nav-item nav-link">Evento</a>
-                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+                <a href="#music" class="nav-item nav-link">Música</a>
+             <!--   <a href="#rsvp" class="nav-item nav-link">RSVP</a> -->
                 <a href="#contact" class="nav-item nav-link">Contacto</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
+    <!-- Commentary button-->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+       window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+       formbutton("create",  {action: "https://formspree.io/YOUR_FORM_ID"}, {caption:"Hola"})
+    </script>
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 pb-5" id="home">
@@ -109,11 +116,7 @@
     </div>
     <!-- Carousel End -->
 
-<!-- VENTANA DE SPOTIFY-->
 
-<div>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5CIxhUyF0OATtBB5zExKRc?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
 
     <!-- Video Modal Start -->
     <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -134,53 +137,7 @@
     <!-- Video Modal End -->
 
 
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">About</h6>
-                <h1 class="font-secondary display-4">Groom & Bride</h1>
-                <i class="far fa-heart text-dark"></i>
-            </div>
-            <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
-                <div class="col-md-6 p-0 text-center text-md-right">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
-                        <h3 class="mb-3">Sandra</h3>
-                        <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Sandra</h3>
-                        <div class="position-relative">
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/about-1.jpg" style="object-fit: cover;">
-                </div>
-            </div>
-            <div class="row m-0">
-                <div class="col-md-6 p-0" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/about-2.jpg" style="object-fit: cover;">
-                </div>
-                <div class="col-md-6 p-0 text-center text-md-left">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
-                        <h3 class="mb-3">Jose</h3>
-                        <p>Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Jose</h3>
-                        <div class="position-relative">
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
+   
 
 
     <!-- Story Start -->
@@ -188,56 +145,59 @@
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6>
-                <h1 class="font-secondary display-4">Our Love Story</h1>
+                <h1 class="font-secondary display-4">Nuestra Historia</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="container timeline position-relative p-0">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="">
+                        <img class="img-fluid mr-md-3" src="img/camino1.jpg" alt="">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                            <h4 class="mb-2">First Meet</h4>
+                            <h4 class="mb-2">Primer Encuentro</h4>
                             <p class="text-uppercase mb-2">11 Sep 2018</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <p class="m-0">Camino de Santiago. As Guardas</p>
+                            <img class="img-fluid mr-md-3" src="img/senal.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">First Date</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <h4 class="mb-2">Primera Cita</h4>
+                            <p class="text-uppercase mb-2">24 Octubre 2018</p>
+                            <p class="m-0">Varsovia.</p>
+                            <img class="img-fluid mr-md-3" src="img/varsovia.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="">
+                        <img class="img-fluid ml-md-3" src="img/cita.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/story-3.jpg" alt="">
+                        <img class="img-fluid mr-md-3" src="img/pedida.jpg" alt="">
                     </div>
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                            <h4 class="mb-2">Proposal</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <h4 class="mb-2">Pedida</h4>
+                            <p class="text-uppercase mb-2">03 Febrero 2023</p>
+                            <p class="m-0">Santuario Madonna della Corona (Verona).</p>
+                            <img class="img-fluid mr-md-3" src="img/Madonna2.jpg" alt="" >
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">Enagagement</h4>
-                            <p class="text-uppercase mb-2">01 Jan 2050</p>
-                            <p class="m-0">Lorem elitr magna stet rebum dolores sed. Est stet labore est lorem lorem at amet sea, eos tempor rebum, labore amet ipsum sea lorem, stet rebum eirmod amet. Kasd clita kasd stet amet est dolor elitr.</p>
+                            <h4 class="mb-2">Boda</h4>
+                            <p class="text-uppercase mb-2">13 Septiembre 2024</p>
+                            <p class="m-0">Kosice.</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="">
+                        <img class="img-fluid ml-md-3" src="img/kosice.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -291,7 +251,7 @@
                 </a>
             </div>
             <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-7.jpg" alt="">
+                <img class="img-fluid w-100" src="img/gallery-15.jpg" alt="">
                 <a href="img/gallery-7.jpg" data-lightbox="gallery">
                     <i class="fa fa-2x fa-plus text-white"></i>
                 </a>
@@ -353,7 +313,8 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Clita ipsum aliquyam dolor diam dolores elitr nonumy. Rebum sea vero ipsum eirmod tempor kasd. Diam amet lorem erat eos sit lorem elitr justo</h5>
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">
+                        La boda tendrá lugar en Košice y se celebrará en Veľký Sariš</h5>
                 </div>
             </div>
             <div class="row">
@@ -375,8 +336,8 @@
                         <h4 class="mb-3">Convite</h4>
                         <h6 class="mb-3">Sarišská Stodola</h6>
                         <p class="mb-2">Ulica Tulčícka, Veľký Šariš, Prešov, Slovensko</p>
-                        <p class="mb-0"></p>
-                        <a class="btn btn-outline-primary btn-square" target="_blank" href="https://www.google.com/maps/place/Tul%C4%8Dick%C3%A1,+082+21+Ve%C4%BEk%C3%BD+%C5%A0ari%C5%A1/@49.0308087,21.1908721,270m/data=!3m1!1e3!4m6!3m5!1s0x473ef32930bf02e9:0x9a15681a5e7ccf46!8m2!3d49.02959!4d21.1929761!16s%2Fg%2F1tcyd7ck?hl=es&entry=ttu"><i class="fas fa-globe"></i></a>
+                        <p class="mb-0">17:00</p>
+                        <a class="btn btn-outline-primary btn-square" target="_blank" href="https://www.google.com/maps/place/%C5%A0ari%C5%A1sk%C3%A1+Stodola/@49.0309931,21.1877073,1039m/data=!3m1!1e3!4m15!1m8!3m7!1s0x473ef32930bf02e9:0x9a15681a5e7ccf46!2zVHVsxI1pY2vDoSwgMDgyIDIxIFZlxL5rw70gxaBhcmnFoQ!3b1!8m2!3d49.02959!4d21.1929761!16s%2Fg%2F1tcyd7ck!3m5!1s0x473ef30056659065:0x5e0d053c50588c26!8m2!3d49.0328138!4d21.1931741!16s%2Fg%2F11y3jwlj65?hl=es&entry=ttu"><i class="fas fa-globe"></i></a>
 
                     </div>
                 </div>
@@ -385,130 +346,20 @@
     </div>
     <!-- Event End -->
 
-<!---->
-    <!-- Friends & Family Start 
-    <div class="container-fluid py-5" id="family">
-        <div class="container pt-5 pb-3">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Friends & Family</h6>
-                <h1 class="font-secondary display-4">Groomsmen & Bridesmaid</h1>
-                <i class="far fa-heart text-dark"></i>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">Groomsmen</li>
-                        <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">Bridesmaid</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/groomsmen-1.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/groomsmen-2.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/bridesmaid-2.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/groomsmen-3.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/bridesmaid-3.jpg" alt="">
-                        <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     Friends & Family End -->
+
 
  <!-- Información Start -->
  <div class="container-fluid py-5" id="event">
     <div class="container py-5">
         <div class="section-title position-relative text-center">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Información</h6>
-            <h1 class="font-secondary display-4">Aeropuertos</h1>
+            <h1 class="font-secondary display-4">De interés</h1>
             <i class="far fa-heart text-dark"></i>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-6 text-center">
-                <h5 class="font-weight-normal text-muted mb-3 pb-3">Aquí hay que poner otra cosa a la derecha porque el convite ya está. Se puede poner info sobre lugares de interés. La parte de arriba se puede llamar de otra forma en lugar de Aeropuertos</h5>
+                <h5 class="font-weight-normal text-muted mb-3 pb-3">
+                    Lista de alojamientos</h5>
             </div>
         </div>
         <div class="row">
@@ -594,64 +445,11 @@
     -->
     <!-- RSVP End -->
 
-    
-<!-- RSVP Start -->
-<div class="container-fluid py-5" id="rsvp">
-    <div class="container py-5">
-        <div class="section-title position-relative text-center">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
-            <h1 class="font-secondary display-4">Join Our Party</h1>
-            <i class="far fa-heart text-dark"></i>
-        </div>
-
-        <div class="container-fluid py-5"class="section-title position-relative text-center"><h5>ESTA PARTE FUERA</h5></div>
-        
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="text-center">
-                    <!-- Se agrega el atributo 'method="post"' para especificar que el formulario se envía usando el método HTTP POST -->
-                    <form method="post" action="enviar_email.php"> <!-- Se cambia el valor del atributo 'action' para apuntar al script PHP 'enviar_email.php' -->
-                        <div class="form-row">
-                            <div class="form-group col-sm-6">
-                                <!-- Se agrega el atributo 'name="nombre"' para identificar el campo del nombre en el script PHP -->
-                                <input type="text" class="form-control bg-secondary border-0 py-4 px-3" name="nombre" placeholder="Your Name"/>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <!-- Se agrega el atributo 'name="email"' para identificar el campo del correo electrónico en el script PHP -->
-                                <input type="email" class="form-control bg-secondary border-0 py-4 px-3" name="email" placeholder="Your Email"/>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-sm-6">
-                                <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                    <option>Number of Guest</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                    <option>I'm Attending</option>
-                                    <option>All Events</option>
-                                    <option>Wedding Party</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" name="mensaje" placeholder="Message" required="required"></textarea>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- VENTANA DE SPOTIFY-->
+<div id="music">
+   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5CIxhUyF0OATtBB5zExKRc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<!--    <iframe style="border-radius:12px" src="https://spotify.link/Y75JuB75jJb" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
 </div>
-<!-- RSVP End -->
 
 
     <!-- Footer Start -->
@@ -662,22 +460,24 @@
                 <i class="far fa-heart text-white"></i>
             </div>
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+              <!--  <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>-->
                 <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/sandrika.h?igsh=ZTZncjg5MnVibnJu"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/jmkillo?igsh=MW81a3RseGh3aTUzag=="><i class="fab fa-instagram"></i></a>
+
             </div>
             <div class="d-flex justify-content-center py-2">
                 <p class="text-white" href="#">sandrayjose13sept@gmail.com</p>
-                <span class="px-3">|</span>
+               <!-- <span class="px-3">|</span>
+                <p class="text-white" href="#">0034 622 65 96 18</p>--> 
+            </div>
+            <div class="d-flex justify-content-center py-2">
                 <p class="text-white" href="#">0034 622 65 96 18</p>
-            </div>
-            <div class="d-flex justify-content-center py-2">
-                <p class="text-white" href="#">sandrayjose13sept@gmail.com</p>
                 <span class="px-3">|</span>
                 <p class="text-white" href="#">00451 902 848 022</p>
             </div>
-            <p class="m-0">&copy; <a class="text-primary" href="#">Killo</a>. Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>
+            <p class="m-0">&copy; <a class="text-primary" href="#">Killo</a>.<!-- Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>-->
             </p>
         </div>
     </div>
