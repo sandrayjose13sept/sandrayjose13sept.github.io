@@ -13,7 +13,8 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -38,7 +39,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Inicio</a>
-               <!-- <a href="#about" class="nav-item nav-link">Nosotros</a>-->
+                <!-- <a href="#about" class="nav-item nav-link">Nosotros</a>-->
                 <a href="#story" class="nav-item nav-link">Historia</a>
                 <a href="#gallery" class="nav-item nav-link">Galeria</a>
             </div>
@@ -46,15 +47,18 @@
                 <h1 class="font-secondary text-white mb-n2">Sandra <span class="text-primary">&</span> Jose</h1>
             </a>
             <div class="navbar-nav mr-auto py-0">
-                <a href="#family" class="nav-item nav-link">Información</a>
                 <a href="#event" class="nav-item nav-link">Evento</a>
+                <a href="#family" class="nav-item nav-link">Información</a>
                 <a href="#music" class="nav-item nav-link">Música</a>
-             <!--   <a href="#rsvp" class="nav-item nav-link">RSVP</a> -->
+                <!--   <a href="#rsvp" class="nav-item nav-link">RSVP</a> -->
                 <a href="#contact" class="nav-item nav-link">Contacto</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
+
+
+
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 pb-5" id="home">
@@ -66,7 +70,8 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Sandra & Jose</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">¡Nos casamos!</h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0"
+                                    style="letter-spacing: 2px;">¡Nos casamos!</h3>
                             </div>
                             <!--
                             <button type="button" class="btn-play mx-auto" data-toggle="modal"
@@ -83,7 +88,8 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Sandra & Jose</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Berieme sa!</h3>
+                                <h3 class="text-uppercase font-weight-normal text-white m-0"
+                                    style="letter-spacing: 2px;">Berieme sa!</h3>
                             </div>
                             <!-- 
                             <button type="button" class="btn-play mx-auto" data-toggle="modal"
@@ -112,16 +118,18 @@
 
 
     <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                    </button>        
+                    </button>
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
@@ -132,58 +140,58 @@
 
     <!-- Commentary button-->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-    
+    <script>
+        /* paste this line in verbatim */
+        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments) };
+        /* customize formbutton below*/
+        formbutton("create", {
+            action: "https://formspree.io/f/mdoqbpjv",
+            title: "Respuesta / Odpoveď ",
+            fields: [
+                {
+                    type: "text",
+                    label: "Nombre / Meno:",
+                    name: "name",
+                    required: true,
+                    placeholder: "---",
+                },
+                {
+                    type: "email",
+                    label: "Email:",
+                    name: "email",
+                    required: false,
+                    placeholder: "---"
+                },
+                {
+                    type: "text",
+                    label: "¿Qué bebes? / Čo piete?:",
+                    name: "drink",
+                    placeholder: "---",
+                },
+                {
+                    type: "radio",
+                    label: "Necesito alojamiento / Chcem ubytovanie:",
+                    name: "accomodation",
+                },
+                {
+                    type: "textarea",
+                    label: "Mensaje / Správa:",
+                    name: "message",
+                    placeholder: "---",
+                },
+                { type: "submit" }
+            ],
+            styles: {
+                title: {
+                    backgroundColor: "gray"
+                },
+                button: {
+                    backgroundColor: "#af5617"
+                },
 
-<script>
-    /* paste this line in verbatim */
-    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-    /* customize formbutton below*/     
-    formbutton("create", {
-      action: "https://formspree.io/f/mdoqbpjv",
-      title: "Respuesta",
-      fields: [
-        { 
-          type: "email", 
-          label: "Email:", 
-          name: "email",
-          required: true,
-          placeholder: "your@email.com"
-        },
-        {
-          type: "text",
-          label: "Nombre / Meno:",
-          name: "name",
-          placeholder: "¿Quién eres? / Kto si?",
-        },
-        {
-          type: "radio",
-          label: "Necesito alojamiento / Treba ubytovanie:",
-          name: "accomodation",
-        },
-        {
-          type: "text",
-          label: "¿Qué bebes? / Čo pitie?:",
-          name: "drink",
-          placeholder: "---",
-        },
-        {
-          type: "textarea",
-          label: "Mensaje / Správa:",
-          name: "message",
-          placeholder: "What's on your mind?",
-        },
-        { type: "submit" }      
-      ],
-      styles: {
-        title: {
-          backgroundColor: "gray"
-        },
-        button: {
-          backgroundColor: "gray"
-        }
-      }
-    });
-  </script>
+            }
+        });
+    </script>
 
 
 
@@ -195,11 +203,10 @@
                 <h1 class="font-secondary display-4">Nuestra Historia</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
+
             <div class="container timeline position-relative p-0">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/camino1.jpg" alt="">
-                    </div>
+                   
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Primer Encuentro</h4>
@@ -208,7 +215,11 @@
                             <img class="img-fluid mr-md-3" src="img/senal.jpg" alt="">
                         </div>
                     </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/camino1.jpg" alt="">
+                    </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-6 text-center text-md-right">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
@@ -222,17 +233,18 @@
                         <img class="img-fluid ml-md-3" src="img/cita.jpg" alt="">
                     </div>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3" src="img/pedida.jpg" alt="">
-                    </div>
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Pedida</h4>
                             <p class="text-uppercase mb-2">03 Febrero 2023</p>
                             <p class="m-0">Santuario Madonna della Corona (Verona).</p>
-                            <img class="img-fluid mr-md-3" src="img/Madonna2.jpg" alt="" >
+                            <img class="img-fluid mr-md-3" src="img/Madonna2.jpg" alt="">
                         </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/pedida.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
@@ -373,7 +385,9 @@
                         <p class="mb-2">Ulica Hlavná 91, Košice, Slovensko</p>
                         <p class="mb-0">15:00</p>
                         <div class="position-relative">
-                            <a class="btn btn-outline-primary btn-square" target="_blank" href="https://www.google.com/maps/place/Semin%C3%A1rny+kostol+sv.+Antona+Padu%C3%A1nskeho/@48.7244584,21.2537422,17z/data=!3m1!4b1!4m6!3m5!1s0x473ee0646dcfcd47:0xbd7f501d3fc5d655!8m2!3d48.7244584!4d21.2563171!16s%2Fg%2F11g9syw9rm?hl=es&entry=ttu"><i class="fas fa-globe"></i></a>
+                            <a class="btn btn-outline-primary btn-square" target="_blank"
+                                href="https://www.google.com/maps/place/Semin%C3%A1rny+kostol+sv.+Antona+Padu%C3%A1nskeho/@48.7244584,21.2537422,17z/data=!3m1!4b1!4m6!3m5!1s0x473ee0646dcfcd47:0xbd7f501d3fc5d655!8m2!3d48.7244584!4d21.2563171!16s%2Fg%2F11g9syw9rm?hl=es&entry=ttu"><i
+                                    class="fas fa-globe"></i></a>
                         </div>
                     </div>
                 </div>
@@ -384,7 +398,9 @@
                         <h6 class="mb-3">Sarišská Stodola</h6>
                         <p class="mb-2">Ulica Tulčícka, Veľký Šariš, Prešov, Slovensko</p>
                         <p class="mb-0">17:00</p>
-                        <a class="btn btn-outline-primary btn-square" target="_blank" href="https://www.google.com/maps/place/%C5%A0ari%C5%A1sk%C3%A1+Stodola/@49.0309931,21.1877073,1039m/data=!3m1!1e3!4m15!1m8!3m7!1s0x473ef32930bf02e9:0x9a15681a5e7ccf46!2zVHVsxI1pY2vDoSwgMDgyIDIxIFZlxL5rw70gxaBhcmnFoQ!3b1!8m2!3d49.02959!4d21.1929761!16s%2Fg%2F1tcyd7ck!3m5!1s0x473ef30056659065:0x5e0d053c50588c26!8m2!3d49.0328138!4d21.1931741!16s%2Fg%2F11y3jwlj65?hl=es&entry=ttu"><i class="fas fa-globe"></i></a>
+                        <a class="btn btn-outline-primary btn-square" target="_blank"
+                            href="https://www.google.com/maps/place/%C5%A0ari%C5%A1sk%C3%A1+Stodola/@49.0309931,21.1877073,1039m/data=!3m1!1e3!4m15!1m8!3m7!1s0x473ef32930bf02e9:0x9a15681a5e7ccf46!2zVHVsxI1pY2vDoSwgMDgyIDIxIFZlxL5rw70gxaBhcmnFoQ!3b1!8m2!3d49.02959!4d21.1929761!16s%2Fg%2F1tcyd7ck!3m5!1s0x473ef30056659065:0x5e0d053c50588c26!8m2!3d49.0328138!4d21.1931741!16s%2Fg%2F11y3jwlj65?hl=es&entry=ttu"><i
+                                class="fas fa-globe"></i></a>
 
                     </div>
                 </div>
@@ -395,113 +411,62 @@
 
 
 
- <!-- Información Start -->
- <div class="container-fluid py-5" id="event">
-    <div class="container py-5">
-        <div class="section-title position-relative text-center">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Información</h6>
-            <h1 class="font-secondary display-4">De interés</h1>
-            <i class="far fa-heart text-dark"></i>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-                <h5 class="font-weight-normal text-muted mb-3 pb-3">
-                    Lista de alojamientos</h5>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 border-right border-primary">
-                <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
-                    <img class="img-fluid mb-4 event-image" src="img/mapa.jpg" alt="iglesia">
-                    <h4 class="mb-3">Mapa Eslovaquia</h4>
-                    <h6 class="mb-3">. </h6>
-                    <p class="mb-2">Ulica Hlavná 91, Košice, Slovensko</p>
-                    <p class="mb-0">12:00AM - 13:00PM</p>
-                    <div class="position-relative">
-                        <a class="btn btn-outline-primary btn-square" target="_blank" href="https://www.google.com/maps/place/Semin%C3%A1rny+kostol+sv.+Antona+Padu%C3%A1nskeho/@48.7244584,21.2537422,17z/data=!3m1!4b1!4m6!3m5!1s0x473ee0646dcfcd47:0xbd7f501d3fc5d655!8m2!3d48.7244584!4d21.2563171!16s%2Fg%2F11g9syw9rm?hl=es&entry=ttu"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="text-center text-md-left ml-md-3">
-                    <img class="img-fluid mb-4 event-image" src="img/event-2.jpg" alt="stodola">
-                    <h4 class="mb-3">Convite</h4>
-                    <h6 class="mb-3">Sarišská Stodola</h6>
-                    <p class="mb-2">Ulica Tulčícka, Veľký Šariš, Prešov, Slovensko</p>
-                    <p class="mb-0">12:00AM - 13:00PM</p>
-                    <a class="btn btn-outline-primary btn-square" target="_blank" href="https://www.google.com/maps/place/Tul%C4%8Dick%C3%A1,+082+21+Ve%C4%BEk%C3%BD+%C5%A0ari%C5%A1/@49.0308087,21.1908721,270m/data=!3m1!1e3!4m6!3m5!1s0x473ef32930bf02e9:0x9a15681a5e7ccf46!8m2!3d49.02959!4d21.1929761!16s%2Fg%2F1tcyd7ck?hl=es&entry=ttu"><i class="fas fa-globe"></i></a>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Información End -->
-
-    <!-- RSVP Start -->
-
-    <div class="container-fluid py-5" id="rsvp">
+    <!-- Información Start -->
+    <div class="container-fluid py-5" id="family">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
-                <h1 class="font-secondary display-4">Información /  Informácia</h1>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Información</h6>
+                <h1 class="font-secondary display-4">De interés</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="text-center">
-                        <form method="POST" action="https://formspree.io/f/mdoqbpjv">
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <input type="text" name="name" class="form-control bg-secondary border-0 py-4 px-3"
-                                        placeholder="Nombre / Meno" />
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <input type="email" name="email"
-                                        class="form-control bg-secondary border-0 py-4 px-3" placeholder="Email" />
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <input type="text" name="drink" class="form-control bg-secondary border-0 py-4 px-3"
-                                        placeholder="¿Qué bebes? / Čo piete?" />
+                <div class="col-md-6 text-center">
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">
+                        Lista de alojamientos</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 border-right border-primary">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <img class="img-fluid mb-4 event-image" src="img/mapa.jpg" alt="iglesia">
+                        <h4 class="mb-3">Mapa Eslovaquia</h4>
+                        <h6 class="mb-3">. </h6>
+                        <p class="mb-2">Ulica Hlavná 91, Košice, Slovensko</p>
+                        <p class="mb-0">12:00AM - 13:00PM</p>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square" target="_blank"
+                                href="https://www.google.com/maps/place/Semin%C3%A1rny+kostol+sv.+Antona+Padu%C3%A1nskeho/@48.7244584,21.2537422,17z/data=!3m1!4b1!4m6!3m5!1s0x473ee0646dcfcd47:0xbd7f501d3fc5d655!8m2!3d48.7244584!4d21.2563171!16s%2Fg%2F11g9syw9rm?hl=es&entry=ttu"><i
+                                    class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center text-md-left ml-md-3">
+                        <img class="img-fluid mb-4 event-image" src="img/event-2.jpg" alt="stodola">
+                        <h4 class="mb-3">Convite</h4>
+                        <h6 class="mb-3">Sarišská Stodola</h6>
+                        <p class="mb-2">Ulica Tulčícka, Veľký Šariš, Prešov, Slovensko</p>
+                        <p class="mb-0">12:00AM - 13:00PM</p>
+                        <a class="btn btn-outline-primary btn-square" target="_blank"
+                            href="https://www.google.com/maps/place/Tul%C4%8Dick%C3%A1,+082+21+Ve%C4%BEk%C3%BD+%C5%A0ari%C5%A1/@49.0308087,21.1908721,270m/data=!3m1!1e3!4m6!3m5!1s0x473ef32930bf02e9:0x9a15681a5e7ccf46!8m2!3d49.02959!4d21.1929761!16s%2Fg%2F1tcyd7ck?hl=es&entry=ttu"><i
+                                class="fas fa-globe"></i></a>
 
-                                    <!--
-                                    <select class="form-control bg-secondary border-0" class="form-control bg-secondary border-0 py-4 px-3"
-                                        placeholder="Email"style="height: 52px;">
-                                        <option>Number of Guest</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                    -->
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <input type="checkbox" name="accomodation" /> Necesito alojamiento / Chcem
-                                    ubytovanie
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="mensaje" class="form-control bg-secondary border-0 py-2 px-3" rows="5"
-                                    placeholder="Mensaje / Správa"></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Enviar / Poslať</button>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- RSVP End -->
+    <!-- Información End -->
+
     
     <!-- VENTANA DE SPOTIFY-->
-<div id="music">
-   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5CIxhUyF0OATtBB5zExKRc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-<!--    <iframe style="border-radius:12px" src="https://spotify.link/Y75JuB75jJb" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
-</div>
+    <div id="music">
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/5CIxhUyF0OATtBB5zExKRc?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <!--    <iframe style="border-radius:12px" src="https://spotify.link/Y75JuB75jJb" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
+    </div>
 
 
     <!-- Footer Start -->
@@ -512,24 +477,35 @@
                 <i class="far fa-heart text-white"></i>
             </div>
             <div class="d-flex justify-content-center mb-4">
-              <!--  <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <!--  <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>-->
-                <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/sandrika.h?igsh=ZTZncjg5MnVibnJu"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/jmkillo?igsh=MW81a3RseGh3aTUzag=="><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square"
+                    href="https://www.instagram.com/sandrika.h?igsh=ZTZncjg5MnVibnJu"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square"
+                    href="https://www.instagram.com/jmkillo?igsh=MW81a3RseGh3aTUzag=="><i
+                        class="fab fa-instagram"></i></a>
 
             </div>
             <div class="d-flex justify-content-center py-2">
                 <p class="text-white" href="#">sandrayjose13sept@gmail.com</p>
-               <!-- <span class="px-3">|</span>
-                <p class="text-white" href="#">0034 622 65 96 18</p>--> 
+                <!-- <span class="px-3">|</span>
+                <p class="text-white" href="#">0034 622 65 96 18</p>-->
             </div>
             <div class="d-flex justify-content-center py-2">
-                <p class="text-white" href="#">0034 622 65 96 18</p>
+                <p class="text-primary" href="#">Sandra</p>
                 <span class="px-3">|</span>
                 <p class="text-white" href="#">00451 902 848 022</p>
             </div>
-            <p class="m-0">&copy; <a class="text-primary" href="#">Killo</a>.<!-- Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>-->
+            <div class="d-flex justify-content-center py-2">
+                <p class="text-primary" href="#">José</p>
+                <span class="px-3">|</span>
+                <p class="text-white" href="#">0034 622 65 96 18</p>
+            </div>
+            <br><br>
+            <p class="m-0">&copy; <a class="text-primary"
+                    href="#">Killo</a>.<!-- Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>-->
             </p>
         </div>
     </div>
@@ -540,7 +516,8 @@
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i
+            class="fa fa-angle-double-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
