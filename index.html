@@ -55,61 +55,6 @@
         </div>
     </nav>
     <!-- Navbar End -->
-HOLA
-    <!-- Commentary button-->
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-   <script>
-    /* paste this line in verbatim */
-    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-    /* customize formbutton below*/     
-    formbutton("create",    {
-      action: "https://formspree.io/f/mdoqbpjv",
-      title: "Respuesta / Odpoved",
-      
-      fields: [
-        { 
-          type: "email", 
-          label: "Email:", 
-          name: "email",
-          required: false,
-          placeholder: "your@email.com"
-        },
-        {
-          type: "text",
-          label: "Nombre",
-          name: "name",
-          placeholder: "Meno",
-        },
-        {
-          type: "checkbox",
-          label: "Necesito alojamiento / Treba ubytovanie:",
-          name: "accomodation",
-        },
-        {
-          type: "text",
-          label: "¿Qué bebes?",
-          name: "drink",
-          placeholder: "Čo pitie?",
-        },
-        {
-          type: "textarea",
-          label: "Mensaje",
-          name: "message",
-          placeholder: "Správa",
-        },
-        { type: "submit" }      
-      ],
-      styles: {
-        fontFamily:'"Open Sans", sans-serif',
-        title: {
-          backgroundColor: "red"
-          },
-        button: {
-          backgroundColor: "red"
-        }
-      }
-    });
-  </script>
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 pb-5" id="home">
@@ -494,49 +439,55 @@ HOLA
 <!-- Información End -->
 
     <!-- RSVP Start -->
-    <!--
+
     <div class="container-fluid py-5" id="rsvp">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
-                <h1 class="font-secondary display-4">Join Our Party</h1>
+                <h1 class="font-secondary display-4">Información /  Informácia</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center">
-                        <form>
+                        <form method="POST" action="https://formspree.io/f/mdoqbpjv">
                             <div class="form-row">
                                 <div class="form-group col-sm-6">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Name"/>
+                                    <input type="text" name="name" class="form-control bg-secondary border-0 py-4 px-3"
+                                        placeholder="Nombre / Meno" />
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" placeholder="Your Email"/>
+                                    <input type="email" name="email"
+                                        class="form-control bg-secondary border-0 py-4 px-3" placeholder="Email" />
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
+                                    <input type="text" name="drink" class="form-control bg-secondary border-0 py-4 px-3"
+                                        placeholder="¿Qué bebes? / Čo piete?" />
+
+                                    <!--
+                                    <select class="form-control bg-secondary border-0" class="form-control bg-secondary border-0 py-4 px-3"
+                                        placeholder="Email"style="height: 52px;">
                                         <option>Number of Guest</option>
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
                                         <option>4</option>
                                     </select>
+                                    -->
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <select class="form-control bg-secondary border-0" style="height: 52px;">
-                                        <option>I'm Attending</option>
-                                        <option>All Events</option>
-                                        <option>Wedding Party</option>
-                                    </select>
+                                    <input type="checkbox" name="accomodation" /> Necesito alojamiento / Chcem
+                                    ubytovanie
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" placeholder="Message" required="required"></textarea>
+                                <textarea name="mensaje" class="form-control bg-secondary border-0 py-2 px-3" rows="5"
+                                    placeholder="Mensaje / Správa"></textarea>
                             </div>
                             <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Enviar / Poslať</button>
                             </div>
                         </form>
                     </div>
@@ -544,9 +495,8 @@ HOLA
             </div>
         </div>
     </div>
-    -->
-    <!-- RSVP End -->
-
+<!-- RSVP End -->
+    
     <!-- VENTANA DE SPOTIFY-->
 <div id="music">
    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5CIxhUyF0OATtBB5zExKRc?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
