@@ -58,10 +58,58 @@
 
     <!-- Commentary button-->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-    <script>
-       window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-       formbutton("create",  {action: "https://formspree.io/YOUR_FORM_ID"}, {caption:"Hola"})
-    </script>
+   <script>
+    /* paste this line in verbatim */
+    window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+    /* customize formbutton below*/     
+    formbutton("create",    {
+      action: "https://formspree.io/f/mdoqbpjv",
+      title: "Respuesta / Odpoved",
+      
+      fields: [
+        { 
+          type: "email", 
+          label: "Email:", 
+          name: "email",
+          required: false,
+          placeholder: "your@email.com"
+        },
+        {
+          type: "text",
+          label: "Nombre",
+          name: "name",
+          placeholder: "Meno",
+        },
+        {
+          type: "checkbox",
+          label: "Necesito alojamiento / Treba ubytovanie:",
+          name: "accomodation",
+        },
+        {
+          type: "text",
+          label: "¿Qué bebes?",
+          name: "drink",
+          placeholder: "Čo pitie?",
+        },
+        {
+          type: "textarea",
+          label: "Mensaje",
+          name: "message",
+          placeholder: "Správa",
+        },
+        { type: "submit" }      
+      ],
+      styles: {
+        fontFamily:'"Open Sans", sans-serif',
+        title: {
+          backgroundColor: "red"
+          },
+        button: {
+          backgroundColor: "grey"
+        }
+      }
+    });
+  </script>
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 pb-5" id="home">
